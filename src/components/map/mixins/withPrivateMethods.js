@@ -61,7 +61,7 @@ export default {
             container: this.$refs.container,
             style: this.mapStyle
           });
-          map.on("load", () => resolve(map));
+          map.once("styledata", () => resolve(map));
         });
       });
     },

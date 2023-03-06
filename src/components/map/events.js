@@ -21,6 +21,7 @@ export default {
   sourcedataloading: { name: "sourcedataloading" },
   error: { name: "error" },
   data: { name: "data" },
+  'style.load': { name: "style.load" },
   styledata: { name: "styledata" },
   sourcedata: { name: "sourcedata" },
   mouseout: { name: "mouseout" },
