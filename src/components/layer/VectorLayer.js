@@ -40,6 +40,11 @@ export default {
 
   created() {
     this.$_deferredMount();
+    this.map.on("style.load", this.$_deferredMount);
+  },
+
+  destroyed() {
+    this.map.off("style.load", this.$_deferredMount);
   },
 
   methods: {
